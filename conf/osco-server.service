@@ -1,0 +1,11 @@
+[Unit]
+Description=Serveur OSCO
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/osco-server
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
