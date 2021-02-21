@@ -7,7 +7,7 @@
 
 # Téléchargement des données à l'échelle de la région
 # À remplacer par l'export pbf de la région voulue sur Geofabrik par exemple
-wget http://osm.anatidaepho.be/export/export.pbf
+wget http://download.geofabrik.de/europe/france/rhone-alpes-latest.osm.pbf -O export.pbf
 
 # Limiter les données à une bounding box tout en conservant les routes coupées sur les bords
 osmconvert export.pbf -b=4.6917,45.5570,5.0619,45.9392 --complete-ways > import.osm
